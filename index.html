@@ -1,0 +1,189 @@
+
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" integrity="sha384-WskhaSGFgHYWDcbwN70/dfYBj47jz9qbsMId/iRN3ewGhXQFZCSftd1LZCfmhktB" crossorigin="anonymous">
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+<style>.footer {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  height: 60px; /* Set the fixed height of the footer here */
+  line-height: 60px; /* Vertically center the text there */
+  background-color: #f5f5f5;
+}
+</style>
+<title>Radio</title>
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+li a:hover:not(.active) {
+    background-color: #111;
+}
+
+.active {
+    background-color: #4CAF50;
+}
+</style>
+</head>
+<body>
+
+<ul>
+  <li><a href="/">Home</a></li>
+  <li style="float:right"><a class="active" href="http://internal.rossm.ml/">Login</a></li>
+</ul>
+
+</body>
+</html>
+
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="google-site-verification" content="jIT6oWCeuRN7n4XXknsXzepEfg5uO1Nyy-W4tKApfF8" />
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<style>
+.collapsible {
+    background-color: #777;
+    color: white;
+    cursor: pointer;
+    padding: 18px;
+    width: 100%;
+    border: none;
+    text-align: left;
+    outline: none;
+    font-size: 15px;
+}
+
+.active, .collapsible:hover {
+    background-color: #555;
+}
+
+.content {
+    padding: 0 18px;
+    display: none;
+    overflow: hidden;
+    background-color: #f1f1f1;
+}
+body  {
+    background-color: #cccccc;
+}
+</style>
+</head>
+<body>
+<style>
+body,h1 {font-family: "Raleway", sans-serif}
+body, html {height: 100%}
+</style>
+<style>
+/* Cursor */
+.typed-cursor {}
+
+/* If fade out option is set */
+.typed-fade-out {}</style>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Raleway">
+
+<center><h1 class="type"></h1> 
+<script type="text/javascript" src="typed.js"></script>
+<script type="text/javascript"> 
+  var typed3 = new Typed('.type', {
+    strings: ['Free Radio Audio', 'Free Radio Service', 'Choose a stream',],
+    typeSpeed: 55,
+    backSpeed: 100,
+	cursorChar: '',
+    smartBackspace: true, // this is a default
+    loop: true
+  });
+</script> </center>
+<br>
+<button class="collapsible"><center>RADIO #1 - Ross</center></button>
+<div class="content">
+  <p><center><audio controls>
+  <source src="http://rossm.ml:8000/stream.mp3" type="audio/ogg">
+  <source src="http://rossm.ml:8000/stream.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio></center>
+<center> Hosted & Ran by Ross M. </center>
+<center>Stream Name: /stream_mp3</center></p>
+</div>
+<br>
+<button class="collapsible"><center>RADIO #2 - Apollo</center></button>
+<div class="content">
+  <p><center>
+<font color="blue"> &#x2714; Apollo's Radio</font>
+<br>
+<audio controls>
+  <source src="http://rossm.ml:8000/apollo.mp3" type="audio/ogg">
+  <source src="http://rossm.ml:8000/apollo.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio></center>
+<center> Hosted & Ran by Apollo </center>
+<center>Stream Name: /apollo_mp3</center></p>
+</div>
+<br>
+<button class="collapsible"><center>RADIO #2 - Dj Electro</center></button>
+<div class="content">
+  <p><center>
+<font color="blue"> &#x2714; Adam's Radio</font>
+<br>
+<audio controls>
+  <source src="http://play.theendlessweb.com:8000/stream.mp3" type="audio/ogg">
+  <source src="http://play.theendlessweb.com:8000/stream.mp3" type="audio/mpeg">
+Your browser does not support the audio element.
+</audio></center>
+<center> Hosted & Ran by Dj Electro </center>
+<center>Stream Name: /stream_mp3</center></p>
+</div>
+</div>
+
+<script>
+var coll = document.getElementsByClassName("collapsible");
+var i;
+
+for (i = 0; i < coll.length; i++) {
+    coll[i].addEventListener("click", function() {
+        this.classList.toggle("active");
+        var content = this.nextElementSibling;
+        if (content.style.display === "block") {
+            content.style.display = "none";
+        } else {
+            content.style.display = "block";
+        }
+    });
+}
+</script>
+
+</body>
+</html>
+
+<hr>
+<center> These radio's are not designed to run 24/7</center>
+<center><font size="1"><p>&#x2714; Means VERIFIED SERVER HOST</font></center>
+
+<meta name="description" content="Music radios for you!">
+
+
+ <footer class="footer">
+      <div class="container">
+        <span class="text-muted">Ross M. Radios - Apollo/Ross RADIO</span>
+      </div>
+    </footer>
